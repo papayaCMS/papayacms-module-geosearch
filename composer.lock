@@ -3,43 +3,49 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8707f6ec0a4f18f451e026110c1b586c",
+    "hash": "23db2e60e642b1b1b33d2715fe8c7951",
     "packages": [
         {
             "name": "papaya/cms-core",
-            "version": "dev-trunk",
+            "version": "dev-master",
             "source": {
-                "type": "svn",
-                "url": "http://SystemVCS:Fino8Wae@svn.dim/papayaCMS",
-                "reference": "/trunk/papayaCMS/papaya-lib/@39541"
+                "type": "git",
+                "url": "http://vcs.dim/papayacms/papayacms-core.git",
+                "reference": "9a15933b658ad865c8750a06430755b296e4b28e"
+            },
+            "require-dev": {
+                "papaya/cms-administration": "*",
+                "papaya/template-responsive": "*",
+                "papaya/theme-dynamic": "*",
+                "papaya/unittest-framework": "*"
             },
             "type": "library",
+            "extra": {
+                "document-root": "htdocs/"
+            },
             "description": "papaya CMS core framework",
-            "time": "2014-03-10 12:32:21"
+            "time": "2014-05-21 18:18:54"
         }
     ],
     "packages-dev": [
         {
             "name": "papaya/cms-administration",
-            "version": "dev-trunk",
+            "version": "dev-master",
             "source": {
-                "type": "svn",
-                "url": "http://SystemVCS:Fino8Wae@svn.dim/papayaCMS",
-                "reference": "/trunk/papayaCMS/papaya/@39541"
-            },
-            "require": {
-                "papaya/composer-plugins": "*"
+                "type": "git",
+                "url": "http://vcs.dim/papayacms/papayacms-administration-ui.git",
+                "reference": "7258e8f48af3814490c4db10f1bfc46b1c93e275"
             },
             "type": "papaya-administration-ui",
-            "time": "2014-03-06 15:55:16"
+            "time": "2014-05-22 10:08:23"
         },
         {
             "name": "papaya/composer-plugins",
-            "version": "dev-trunk",
+            "version": "dev-master",
             "source": {
-                "type": "svn",
-                "url": "http://SystemVCS:Fino8Wae@svn.dim/papayaCMS-composer",
-                "reference": "/trunk/@12"
+                "type": "git",
+                "url": "http://vcs.dim/papayacms/papayacms-composer-plugins.git",
+                "reference": "6e1891835803320e561ba9c2261ff0160fe356a0"
             },
             "require": {
                 "composer-plugin-api": "1.0.0"
@@ -54,36 +60,53 @@
                 }
             },
             "description": "papaya CMS Composer Plugins",
-            "time": "2014-01-08 13:04:51"
+            "time": "2014-05-22 12:16:19"
         },
         {
             "name": "papaya/template-responsive",
-            "version": "dev-trunk",
+            "version": "dev-master",
             "source": {
-                "type": "svn",
-                "url": "http://SystemVCS:Fino8Wae@svn.dim/papayaCMS",
-                "reference": "/trunk/papayaCMS/papaya-data/templates/responsive/@39541"
+                "type": "git",
+                "url": "http://vcs.dim/papayacms/papayacms-template-responsive.git",
+                "reference": "80d5a62191af21ff8c68265d31173fc0f985252b"
             },
             "require": {
                 "papaya/composer-plugins": "*"
             },
             "type": "papaya-template",
-            "time": "2014-02-27 19:13:36"
+            "time": "2014-05-22 10:53:47"
+        },
+        {
+            "name": "papaya/test-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://vcs.dim/papayacms/papayacms-test-framework.git",
+                "reference": "68085c10a828196b9feff63cd3d7a0e5b7b4c856"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./src/"
+                ]
+            },
+            "description": "papaya CMS unittest framework",
+            "time": "2014-05-22 14:39:15"
         },
         {
             "name": "papaya/theme-dynamic",
-            "version": "dev-trunk",
+            "version": "dev-master",
             "source": {
-                "type": "svn",
-                "url": "http://SystemVCS:Fino8Wae@svn.dim/papayaCMS",
-                "reference": "/trunk/papayaCMS/papaya-themes/dynamic/@39541"
+                "type": "git",
+                "url": "http://vcs.dim/papayacms/papayacms-theme-dynamic.git",
+                "reference": "fef70d273f3682c7dffa72d1f28bec8c6ab79206"
             },
             "require": {
                 "papaya/composer-plugins": "*",
                 "papaya/template-responsive": "*"
             },
             "type": "papaya-theme",
-            "time": "2014-02-28 19:58:32"
+            "time": "2014-05-22 10:59:23"
         }
     ],
     "aliases": [
