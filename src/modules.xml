@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulegroup>
+  <name>Geosearch</name>
+  <description>
+    The Geosearch represents a search to find location data by 
+  </description>
+  <modules>
+    <!-- connector -->
+    <module type="connector" 
+            guid="b3652a2669aae6923e574cbba7430e1a" 
+            name="Geosearch Connector" 
+            class="GeosearchConnector" 
+            file="Connector.php">
+      Livesearch connector.
+    </module>
+  </modules>
+  <tables>
+    <table name="geosearch_locations" />
+    <table name="geosearch_zips" />
+  </tables>
+</modulegroup>

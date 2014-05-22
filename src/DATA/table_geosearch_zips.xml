@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<table name="geosearch_zips" prefix="yes">
+  <fields>
+    <field name="zip" type="integer" size="4" null="no"/>
+    <field name="loc_id" type="integer" size="4" null="no"/>
+  </fields>
+  <keys>
+    <key name="zip">
+      <field>zip</field>
+    </key>
+    <key name="loc_id">
+      <field>loc_id</field>
+    </key>
+  </keys>
+</table>

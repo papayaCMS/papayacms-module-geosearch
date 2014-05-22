@@ -1,0 +1,43 @@
+<refentry id="{@id}">
+  <refnamediv>
+    <refname>Geosearch package description</refname>
+    <refpurpose>
+      The Geosearch package is used to get location data by a specified query string.
+    </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <author>
+      papaya Software GmbH
+      <authorblurb>
+        {@link mailto:info@papaya-cms.com papaya Software GmbH}
+      </authorblurb>
+    </author>
+  </refsynopsisdiv>
+  {@toc}
+  <refsect1 id="{@id geosearch}">
+    <title>Introduction</title>
+    <para>
+
+    </para>
+  </refsect1>
+  <refsect1 id="{@id installation}">
+    <title>Installation</title>
+    <para>
+      This section will show you howto integrate this functionallity into a papaya site.
+    </para>
+    <refsect2 id="{@id installation-preparations}">
+      <title>Preparations</title>
+      <para>
+        To be able to integrate the livesearch into a papaya site a number of preparations are to 
+        be done.
+      </para>
+    </refsect2>
+    <refsect2 id="{@id installation-setup}">
+      <title>Setup</title>
+      <para>
+        After the proparations are complete, apply the following tasks to finalize the installation
+        procedure.
+      </para>
+    </refsect2>
+  </refsect1>
+</refentry>

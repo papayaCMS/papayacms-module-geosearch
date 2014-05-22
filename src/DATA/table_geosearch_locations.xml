@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<table name="geosearch_locations" prefix="yes">
+  <fields>
+    <field name="loc_id" type="integer" size="4" null="no" autoinc="yes"/>
+    <field name="name" type="string" size="255" null="no"/>
+    <field name="type_id" type="integer" size="4" null="no"/>
+    <field name="state_loc_id" type="integer" size="4" null="no"/>
+    <field name="parent_loc_id" type="integer" size="4" null="no"/>
+    <field name="longitude" type="float" size="10,5" null="no"/>
+    <field name="latitude" type="float" size="10,5" null="no"/>
+    <field name="prefix" type="string" size="2" null="no"/>
+    <field name="zip_count" type="integer" size="4" null="no"/>
+    <field name="show_on_map" type="integer" size="4" null="no"/>
+    <field name="top_10" type="integer" size="4" null="no"/>
+    <field name="top_50" type="integer" size="4" null="no"/>
+  </fields>
+  <keys>
+    <primary-key>
+      <field>loc_id</field>
+    </primary-key>
+    <key name="name">
+      <field>name</field>
+    </key>
+    <key name="parent_loc_id">
+      <field>parent_loc_id</field>
+    </key>
+    <key name="state_loc_id">
+      <field>state_loc_id</field>
+    </key>
+    <key name="type_id">
+      <field>type_id</field>
+    </key>
+    <key name="zip_count">
+      <field>zip_count</field>
+    </key>
+  </keys>
+</table>
